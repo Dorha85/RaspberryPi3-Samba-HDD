@@ -1,0 +1,26 @@
+proc            /proc           proc    defaults          0       0
+/dev/mmcblk0p1  /boot           vfat    defaults          0       2
+#/dev/mmcblk0p2  /               ext4    defaults,noatime  0       1
+# a swapfile is not a swap partition, no line here
+# use  dphys-swapfile swap[on|off]  for that
+#--------------------------------------------
+# sudo blkid
+# sudo fdisk -l -u
+# sudo nano /etc/fstab
+# sudo umount /dev/sda1
+# sudo mount /dev/sda1
+# sudo nano /etc/fstab
+# ls -l /dev/disk/by-uuid
+#  /dev/sda1: LABEL="DSA" UUID="B6DE5141DE50FB57" TYPE="ntfs" PARTUUID="30ad0efa-01"
+   	UUID="B6DE5141DE50FB57"   /media/USBHDD1      ntfs      user,auto,rw       0     0 
+#--------------------------------------------
+
+
+
+
+
+
+
+
+
+
