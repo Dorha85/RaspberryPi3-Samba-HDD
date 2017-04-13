@@ -14,12 +14,12 @@ fi
 	sudo apt-get upgrade -y
 
 echo "Ready to install Samba and too settings for HDD -DSA-version1"
-sleep 2
+sleep 3
 echo "You can check your HDD UUID"
 echo "UUID="B6DE5141DE50FB57"  /media/USBHDD1"
-sleep 3
-sudo blkid
 sleep 4
+sudo blkid
+sleep 7
 
 clear
 echo "3- Install samba"
