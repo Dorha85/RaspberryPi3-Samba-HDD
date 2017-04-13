@@ -76,6 +76,13 @@ sleep 3
 echo "14- service / sudo blkid"
 sudo samba --version
 
+	echo "================================================================"
+	echo "=================== Configuration complete! ===================="
+	echo "================================================================"
+	sleep 10
+
+	exit 0
+
 #else
  #   exit 1
 
