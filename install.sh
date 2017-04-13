@@ -76,16 +76,13 @@ sudo cp ./config-files/smb.conf /etc/samba/
 echo "13- service restart"
 sudo service smbd restart && sudo /etc/init.d/samba restart
 sleep 3
-
-echo "14- service / sudo blkid"
 sudo samba --version
-cd
 
 	echo "================================================================"
 	echo "=================== Configuration complete! ===================="
 	echo "================================================================"
 	sleep 4
-
+	
 	exit 0
 
 #else
