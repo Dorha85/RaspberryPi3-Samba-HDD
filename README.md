@@ -6,9 +6,9 @@ First of all, make sure that Git is installed:
 sudo apt-get update
 sudo apt-get install -y git dialog
 
-* In the terminal, run: sudo git clone https://github.com/Dorha85/RaspberryPi3-Samba-HDD.git
+* Run: sudo git clone https://github.com/Dorha85/RaspberryPi3-Samba-HDD.git
 
-* Run command: cd RaspberryPi3-Samba-HDD && chmod +x install.sh && sudo ./instal.sh
+* Run: sudo cd RaspberryPi3-Samba-HDD && chmod +x install.sh && sudo ./instal.sh
 
 
 
