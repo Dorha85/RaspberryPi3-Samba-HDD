@@ -14,12 +14,12 @@ fi
 	sudo apt-get upgrade -y
 
 echo "Ready to install Samba and too settings for HDD -DSA-version1"
-sleep 3
+sleep 5
 echo "You can check your HDD UUID"
 echo "UUID="B6DE5141DE50FB57"  /media/USBHDD1"
-sleep 4
+sleep 6
 sudo blkid
-sleep 7
+sleep 14
 
 clear
 echo "3- Install samba"
@@ -31,6 +31,7 @@ echo "4- BackUp fstab"
 sudo cp /etc/samba/smb.conf /etc/samba/smb.conf.old
 sleep 2
 
+clear
 echo "5- Instal usbmount"
 sudo apt-get install usbmount -y
 sleep 2
@@ -44,15 +45,18 @@ clear
 echo "7- sudo mkdir /media/USBHDD1"
 sudo mkdir /media/USBHDD1
 sleep 2
+clear
 
 echo "9- UnMount:USBHDD1"
 sudo umount /media/USBHDD1 && sudo umount /dev/sda1
-sleep 4
+sleep 6
 
 echo "10- Change file fstab"
 sudo cp ./config-files/fstab /etc/
-
 sleep 2
+
+echo "aplly chown -R pi:pi /media/USBHDD1"
+clear
 sudo chown -R pi:pi /media/USBHDD1
 sleep 2
 sudo mount -a
@@ -64,7 +68,7 @@ sleep 2
 clear
 echo "11- BackUp smb.conf"
 sudo cp /etc/samba/smb.conf /etc/samba/smb.conf.old
-sleep 1
+sleep 2
 
 echo "12- Change file smb.conf"
 sudo cp ./config-files/smb.conf /etc/samba/
@@ -79,7 +83,7 @@ sudo samba --version
 	echo "================================================================"
 	echo "=================== Configuration complete! ===================="
 	echo "================================================================"
-	sleep 10
+	sleep 4
 
 	exit 0
 
