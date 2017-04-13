@@ -22,7 +22,7 @@ sudo blkid
 sleep 4
 
 clear
-echo "3- Instal samba"
+echo "3- Install samba"
 sudo apt-get install samba samba-common-bin -y
 sleep 2
 
@@ -47,10 +47,11 @@ sleep 2
 
 echo "9- UnMount:USBHDD1"
 sudo umount /media/USBHDD1 && sudo umount /dev/sda1
-sleep 2
+sleep 4
 
 echo "10- Change file fstab"
-sudo cp /home/pi/DSAsamba/fstab /etc/
+sudo cp ./config-files/fstab /etc/
+
 sleep 2
 sudo chown -R pi:pi /media/USBHDD1
 sleep 2
@@ -66,7 +67,7 @@ sudo cp /etc/samba/smb.conf /etc/samba/smb.conf.old
 sleep 1
 
 echo "12- Change file smb.conf"
-sudo cp /home/pi/DSAsamba/smb.conf /etc/samba/
+sudo cp ./config-files/smb.conf /etc/samba/
 
 echo "13- service restart"
 sudo service smbd restart && sudo /etc/init.d/samba restart
