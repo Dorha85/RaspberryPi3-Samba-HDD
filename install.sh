@@ -1,5 +1,6 @@
 #!/bin/sh
 clear
+
 read -r -p "This script will make changes to your system which may break some applications. Are you sure that you wish to continue? [y/N] " confirm
 
 if [[ $confirm =~ ^([yY][eE][sS]|[yY])$ ]]
@@ -27,3 +28,9 @@ sleep 2
 
 echo "14- service"
 sudo samba --version
+
+
+#else
+ #   exit 1
+
+fi
