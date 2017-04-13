@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 clear
 read -r -p "This script will make changes to your system which may break some applications. Are you sure that you wish to continue? [y/N] " confirm
 
