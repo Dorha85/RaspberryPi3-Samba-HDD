@@ -1,7 +1,15 @@
 # RaspberryPi3-Samba-HDD
 Install on RaspberryPi3 Samba and HDD
 
+First of all, make sure that Git is installed:
+
+sudo apt-get update
+sudo apt-get install -y git dialog
+
 In the terminal, run: sudo git clone https://github.com/Dorha85/RaspberryPi3-Samba-HDD.git
+Run command: cd RaspberryPi3-Samba-HDD && chmod +x install.sh && sudo ./instal.sh
+
+
 
 Navigate to folder, ls [ cd RaspberryPi3-Samba-HDD ] and execute ls [ sudo ./install ]
 
