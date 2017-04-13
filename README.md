@@ -8,15 +8,9 @@ sudo apt-get install -y git dialog
 
 * Run: sudo git clone https://github.com/Dorha85/RaspberryPi3-Samba-HDD.git
 
-* Run: cd RaspberryPi3-Samba-HDD && sudo chmod +x install.sh && sudo ./instal.sh
+* Run: cd RaspberryPi3-Samba-HDD && sudo chmod +x install.sh && sudo ./install.sh
 
-
-cd RaspberryPi3-Samba-HDD && sudo chmod +x install.sh &&  sudo ./install.sh
-
-
-Navigate to folder, ls [ cd RaspberryPi3-Samba-HDD ] and execute ls [ sudo ./install ]
-
-Confirm that you are happy for changes to be made.
+* Confirm that you are happy for changes to be made.
 
 This should automatically set everything up and leave you ready to go
 
