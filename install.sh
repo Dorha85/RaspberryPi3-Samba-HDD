@@ -13,7 +13,12 @@ fi
 	echo "Upgrade package lists"
 	sudo apt-get upgrade -y
 
-echo "Ready to install Samba and settings HDD -DSA-version1"
+echo "Ready to install Samba and too settings for HDD -DSA-version1"
+sleep 2
+echo "You can check your HDD UUID"
+echo "UUID="B6DE5141DE50FB57"  /media/USBHDD1"
+sleep 3
+sudo blkid
 sleep 4
 
 clear
@@ -67,7 +72,7 @@ echo "13- service restart"
 sudo service smbd restart && sudo /etc/init.d/samba restart
 sleep 3
 
-echo "14- service"
+echo "14- service / sudo blkid"
 sudo samba --version
 
 #else
